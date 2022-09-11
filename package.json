@@ -1,0 +1,29 @@
+{
+  "name": "pw2-atividade1-api-calcados-murilo",
+  "version": "1.0.0",
+  "description": "API PARA GERENCIA DE CALCADOS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MuriloJLima/pw2-atividade1-api-calcados-murilo.git"
+  },
+  "keywords": [
+    "API",
+    "PW2",
+    "ETEC",
+    "BARUERI",
+    "NODEJS"
+  ],
+  "author": "MURILO JACOBINA LIMA",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MuriloJLima/pw2-atividade1-api-calcados-murilo/issues"
+  },
+  "homepage": "https://github.com/MuriloJLima/pw2-atividade1-api-calcados-murilo#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
