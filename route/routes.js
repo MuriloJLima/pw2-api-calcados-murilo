@@ -6,20 +6,20 @@ const router = express.Router();
 
 //rotas de crud de categoria
 
-router.post('/cadastrarCategoria', (req, res)=>{
+router.post('/cadastrarCalcado', (req, res)=>{
 
     res.send('ROTA DE CADASTRO DE CATEGORIA!')
 })
 
-router.get('/listarCategoria', (req, res)=>{
+router.get('/listarCalcado', (req, res)=>{
     res.send('ROTA DE LISTAR DE CATEGORIA!')
 })
 
-router.put('/alterarCategoria', (req, res)=>{
+router.put('/alterarCalcado', (req, res)=>{
     res.send('ROTA DE ALTERAR DE CATEGORIA!')
 })
 
-router.delete('/excluirCategora', (req, res)=>{
+router.delete('/excluirCalcado', (req, res)=>{
     res.send('ROTA DE EXCLUIR DE CATEGORIA!')
 })
 
