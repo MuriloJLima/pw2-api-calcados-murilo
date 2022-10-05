@@ -24,6 +24,8 @@
   },
   "homepage": "https://github.com/MuriloJLima/pw2-atividade1-api-calcados-murilo#readme",
   "dependencies": {
-    "express": "^4.18.1"
+    "express": "^4.18.1",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.24.0"
   }
 }

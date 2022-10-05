@@ -2,7 +2,7 @@
 const express = require('express')
 
 //importa as rotas
-const routes = require('./route/routes');
+const routes = require('./route/routesCliente');
 
 //torna o express executável dentro do script através da constante declarada
 const app  = express()
