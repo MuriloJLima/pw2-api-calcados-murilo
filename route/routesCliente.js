@@ -2,7 +2,7 @@
 const express = require('express')
 
 // importa a tabela de cliente
-const modelCliente = require('../model/modelClientes');
+const modelC = require('../model/modelClientes');
 
 //gerenciador de rotas para express
 const router = express.Router();
