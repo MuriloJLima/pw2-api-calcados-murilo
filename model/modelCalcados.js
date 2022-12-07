@@ -29,6 +29,6 @@ const modelCalcados = connection.define(
     }
 )
 
-// modelCalcados.sync({force:true});
+//modelCalcados.sync({force:true});
 
 module.exports = modelCalcados;
