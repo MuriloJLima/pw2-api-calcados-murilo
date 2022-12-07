@@ -59,7 +59,7 @@ router.get('/listarClientePK/id_cliente:', (req, res)=>{
     let {id_cliente} = req.params;
 
     //AÇÃO DE SELEÇÃO DE DADOS DO SEQUELIZE
-    modelClientes.findByPk(id_calcado)
+    modelClientes.findByPk(id_cliente)
     .then(
         (response)=>{
             return res.status(200).json({
