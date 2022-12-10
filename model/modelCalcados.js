@@ -14,10 +14,6 @@ const modelCalcados = connection.define(
             type: Sequelize.STRING(60),
             allowNull: false
         },
-        nome_calcado:{
-            type: Sequelize.STRING(60),
-            allowNull: false
-        },
         marca_calcado:{
             type: Sequelize.STRING(40),
             allowNull: false

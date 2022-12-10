@@ -12,9 +12,9 @@ const router = express.Router();
 
 router.post('/cadastrarClientes', (req, res)=>{
     console.log(req.body);
-    let {nome_cliente} = req.body;
+    let {nome_cliente, cpf_cliente, tel_cliente, email_cliente} = req.body;
     modelClientes.create(
-        {nome_cliente}
+        {nome_cliente, cpf_cliente, tel_cliente, email_cliente}
     ).then(
         ()=>{
             return res.status(201).json({
@@ -85,7 +85,7 @@ router.get('/listarClienteNOME/:nome_cliente', (req, res)=>{
 
     let {nome_cliente} = req.params;
 
-    modelClientes.findOne({attributes:['id_cliente', 'nome_cliente'],where:{nome_cliente}})
+    modelClientes.findOne({attributes:['id_cliente', 'nome_cliente', 'cpf_cliente', 'tel_cliente', 'email_cliente'],where:{nome_cliente}})
     .then(
         (response)=>{
             return res.status(200).json({

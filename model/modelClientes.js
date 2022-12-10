@@ -14,24 +14,16 @@ const modelClientes = connection.define(
             type: Sequelize.STRING(60),
             allowNull: false
         },
-        cpf:{
+        cpf_cliente:{
             type: Sequelize.STRING(11),
             allowNull: false
         },
-        sexo:{
-            type: Sequelize.INTEGER(1),
-            allowNull: false
-        },
-        telefone:{
+        tel_cliente:{
             type: Sequelize.STRING(11),
             allowNull: false
         },
-        email:{
+        email_cliente:{
             type: Sequelize.STRING(45),
-            allowNull: false
-        },
-        endereco:{
-            type: Sequelize.STRING(60),
             allowNull: false
         },
     }

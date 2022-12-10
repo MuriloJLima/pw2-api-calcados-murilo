@@ -11,9 +11,9 @@ const router = express.Router();
 
 router.post('/cadastrarCalcados', (req, res)=>{
     console.log(req.body);
-    let {nome_calcado} = req.body;
+    let {nome_calcado, marca_calcado, valor_calcado} = req.body;
     modelCalcados.create(
-        {nome_calcado}
+        {nome_calcado, marca_calcado, valor_calcado}
     ).then(
         ()=>{
             return res.status(201).json({
@@ -85,7 +85,7 @@ router.get('/listarCalcadoNOME/:nome_calcado', (req, res)=>{
 
     let {nome_calcado} = req.params;
 
-    modelCalcados.findOne({attributes:['id_calcado', 'nome_calcado'],where:{nome_calcado}})
+    modelCalcados.findOne({attributes:['id_calcado', 'nome_calcado', 'marca_calcado', 'valor_calcado'],where:{nome_calcado}})
     .then(
         (response)=>{
             return res.status(200).json({
