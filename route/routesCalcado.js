@@ -54,7 +54,7 @@ router.get('/listarCalcados', (req, res)=>{
         );
 })
 
-router.get('/listarCalcadoPK/id_calcado:', (req, res)=>{
+router.get('/listarCalcadoPK/:id_calcado', (req, res)=>{
 
     let {id_calcado} = req.params;
 
@@ -107,10 +107,10 @@ router.get('/listarCalcadoNOME/:nome_calcado', (req, res)=>{
 });
 
 router.put('/alterarCalcados', (req, res)=>{
-    const {id_calcado, nome_calcado, valor_calcado} = req.body;
+    const {id_calcado, nome_calcado, valor_calcado, marca_calcado} = req.body;
 
     modelCalcados.update(
-        {nome_calcado, valor_calcado},
+        {nome_calcado, valor_calcado, marca_calcado},
         {where:{id_calcado}}
     ).then(
         ()=>{

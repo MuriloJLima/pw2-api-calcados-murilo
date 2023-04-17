@@ -17,5 +17,5 @@ app.use('/', routesCliente);
 //declaração da porta
 app.listen(3000, ()=>{
 
-    console.log('SERVIDO RODANDO EM - http://localhost:3000')
+    console.log('SERVIDOR RODANDO EM - http://localhost:3000')
 } )
